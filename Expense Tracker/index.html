@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title> 
+        Budget Tracker 
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <header class = "title"> 
+        <h1>
+            Budget Tracker 
+        </h1>
+    </header>
+    <body>
+
+    <section class = "content">
+        <h1 id = "balance">$0.00</h1>
+
+        <div class = "withrawal">
+            <h2>Withdrawal</h2>
+            <h3 id = "withdraw">0.00</h3>
+        </div>
+
+        <div class = "depo">
+            <h2>Deposit</h2>
+            <h3>300</h3>
+        </div>
+
+        <div class="form">
+            <form id="Infoform">
+                <div class="formLeft">
+                <!--Here I will have leftform with history of transactions-->
+                    <h2>Transactions</h2>
+                        <ul> 
+                            <li class = "minus">
+                                Bills <span> -$50 </span>
+                                <button class = "deleteButton">x</button>
+                            </li>
+                            <li>
+                                PayCheck <span> $742 </span>
+                                <button class = "deleteButto">x</button>                            </li>
+                        </ul>
+                </div>
+
+                <!--Then I will have amount additions on the right side-->
+                <div for = "formRight">
+                    <h2 class = "Add New"> 
+                        Add New:
+                    </h2>
+                    <!--drop down-->
+                    <span for = "tType"> Transaction Type:</span>
+                    <select name = "transType" id = "transType">
+                        <option value = "savings"> Savings</option>
+                        <option value = "expenses"> Expenses</option>
+                        <option value = "investment"> Investment</option>
+                    </select>
+                    <!--description-->
+                    <span for = "Desc"> Description:</span>
+                    <input type = "text" id="name" placeholder = "Enter Text...">
+                    <!--date-->
+                    <span for = "date"> Date:
+                    </span>
+                    <input type = "date" id="name">
+                    <!--amount-->
+                    <span for = "amount"> Amount:
+                    </span>
+                    <input type = "text" placeholder= "0.00" id = 'amount'>
+                </div>
+                <br>
+                <button type = "submit" id= "submit"> submit</button>
+            </form>
+        </div>
+    </section>
+    <script src = "script.js"></script> 
+</body>
+  
+</html>
